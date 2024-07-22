@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
-// Import individual reducers here (e.g., counterReducer, userReducer)
+import githubReducer from './reducers/githubReducers';
 
 const rootReducer = combineReducers({
-  // Add your reducers here (e.g., counter: counterReducer, user: userReducer)
+  github: githubReducer,
+  // other reducers can be added here
 });
+
 export default rootReducer;
